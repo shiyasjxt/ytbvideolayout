@@ -1,0 +1,95 @@
+@import "mixins";
+@import "variables";
+
+
+$roundness: 20px 0 20px 0;
+
+.grid {
+	@include clearfix;
+	.item {
+		float: left;
+    }
+    
+	img {
+		display: block;
+		// border-radius: nth($roundness, 1);
+		width: 100%;
+	}
+}
+
+
+
+.tvholderContainer{
+    background-color: rgb(54,54,54);
+    
+.tvholder{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    h1{
+        text-align: center;
+        color: white;
+        span {
+            color: $color-1;            
+        }
+    }
+}
+}
+
+
+.tvholder{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+.videoContainer{    
+    .youtubeFeatureddiv{
+        background-color: $color-purple;      
+            #youtubeFeatured{
+                width: 100%;
+                margin: 0 auto;
+                padding: 10px;
+                display: block;
+                h1{
+                    color: white;
+                }
+                p{
+                    color: grey;
+                    font-weight: normal;
+                }
+            }
+            .featuregrid {
+                @include clearfix;
+                .item {
+                    float: left;
+                }
+                
+                img {
+                    display: block;
+                    // border-radius: nth($roundness, 1);
+                    width: 100%;
+                }
+
+                .yt-thumbnail-container {
+                    padding: 3px;
+                }
+            }
+
+
+            
+    }
+    .youtubeContainerdiv{
+        text-align: center;
+        color: $color-1;
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
+}
+
+

@@ -1,0 +1,124 @@
+/*
+ * Mixin for easy media queries
+ * @include bp(tablet) { SCSS here };
+ * Default css is for big screen > 1300px width
+ * widescreen value 1600 for panning feature
+*/
+/*
+* Mixing for Touch device 
+* wrap element with html.notouch
+* @include notouch {}
+* Learned it after long way... just need to add '&'
+*/
+/*
+ * Mixin for micro clearfix
+ * @include microclearfix;
+*/
+/*
+ * @include background-size($size:cover);
+*/
+/*
+ * @include box-sizing;
+*/
+/*
+ * Mixin for CSS3 transition
+ * @include transition($property:all, $duration:0.2s, $function:ease);
+*/
+/*
+ * Mixin for CSS3 transition Delay
+ * @include transitionDelay($delay);
+*/
+/* rotate mixin
+ * use of keyframes mixin
+ * @include rotate($deg:0deg);
+*/
+/* rotate mixin
+ * use of keyframes mixin
+ * @include scale($value:1);
+*/
+/* @include translate($x,$y);
+*/
+/* @include translateX($x);
+*/
+/* @include translateY($y);
+*/
+/* keyframes mixin
+ * use of keyframes mixin
+ * @include keyframes(rotate){}
+*/
+/* animation mixin
+ * @include aniamtion($animationName,$duration,$iteration,$function);
+*/
+/*
+ * Mixin for reset list property
+ * @include resetlist;
+*/
+/*
+ * @font-face mixin
+ * Bulletproof font-face via Font Squirrel
+ * @include fontface('family', 'assets/fonts/', 'myfontname');
+ */
+.grid:before, .grid:after {
+  content: '';
+  display: table; }
+
+.grid:after {
+  clear: both; }
+
+.grid .item {
+  float: left; }
+
+.grid img {
+  display: block;
+  width: 100%; }
+
+.tvholderContainer {
+  background-color: #363636; }
+  .tvholderContainer .tvholder {
+    width: 70%;
+    margin: 0 auto;
+    display: block; }
+    .tvholderContainer .tvholder h1 {
+      text-align: center;
+      color: white; }
+      .tvholderContainer .tvholder h1 span {
+        color: #00acd4; }
+
+.tvholder {
+  width: 70%;
+  margin: 0 auto;
+  display: block; }
+
+.videoContainer .youtubeFeatureddiv {
+  background-color: #866398; }
+  .videoContainer .youtubeFeatureddiv #youtubeFeatured {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    display: block; }
+    .videoContainer .youtubeFeatureddiv #youtubeFeatured h1 {
+      color: white; }
+    .videoContainer .youtubeFeatureddiv #youtubeFeatured p {
+      color: grey;
+      font-weight: normal; }
+  .videoContainer .youtubeFeatureddiv .featuregrid:before, .videoContainer .youtubeFeatureddiv .featuregrid:after {
+    content: '';
+    display: table; }
+  .videoContainer .youtubeFeatureddiv .featuregrid:after {
+    clear: both; }
+  .videoContainer .youtubeFeatureddiv .featuregrid .item {
+    float: left; }
+  .videoContainer .youtubeFeatureddiv .featuregrid img {
+    display: block;
+    width: 100%; }
+  .videoContainer .youtubeFeatureddiv .featuregrid .yt-thumbnail-container {
+    padding: 3px; }
+
+.videoContainer .youtubeContainerdiv {
+  text-align: center;
+  color: #00acd4;
+  /* Clear floats after the columns */ }
+  .videoContainer .youtubeContainerdiv .row:after {
+    content: "";
+    clear: both;
+    display: table; }
