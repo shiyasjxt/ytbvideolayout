@@ -74,31 +74,87 @@ $(document).ready(function () {
         console.log("populateContainer() Initiated!");
         var section;
         console.log(section);
+        console.log(result);
+        console.log(result.responseModelItems);
+        
+        
     
         var modelItems = result.responseModelItems;
-    
+        console.log(modelItems[0].listItemId);
+            
         var populatedContent = "";
+
+        var template ="";
+        var template1 ="";
+        
+        if (section === 'featured'){
+
+                template = `<div class="col-xs-6  yt-thumbnail-container">
+                <a href="#popup-{{Popup_Id}}">
+                <img src="{{Yt_Medium_Thumbnail}}" alt="{{Yt_Video_Title}}"/>                            
+                </a>
+            </div>
+            <div id="popup-{{Popup_Id}}" class='overlay item'>
+                <div class="popup">
+                    <a class="close" href="#">&times;</a>
+                    <iframe width="560" height="315" src="{{Yt_Iframe_Url}}" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-xs-6  yt-thumbnail-container">`;
+
+            template1 = `
+            <div class="col-xs-6  yt-thumbnail-container">
+            <a href="#popup-{{Popup_Id}}">
+            <img src="{{Yt_Medium_Thumbnail}}" alt="{{Yt_Video_Title}}"/>                            
+            </a>
+        </div>
+        <div id="popup-{{Popup_Id}}" class='overlay item'>
+            <div class="popup">
+                <a class="close" href="#">&times;</a>
+                <iframe width="560" height="315" src="{{Yt_Iframe_Url}}" allowfullscreen></iframe>
+            </div>
+        </div>`;
+         
+ 
+
+        } else 
+        {
+            template = `<div class="col-xs-4  yt-thumbnail-container">
+            <a href="#popup-{{Popup_Id}}">
+            <img src="{{Yt_Medium_Thumbnail}}" alt="{{Yt_Video_Title}}"/>                            
+            </a>
+        </div>
+        <div id="popup-{{Popup_Id}}" class='overlay item'>
+            <div class="popup">
+                <a class="close" href="#">&times;</a>
+                <iframe width="560" height="315" src="{{Yt_Iframe_Url}}" allowfullscreen></iframe>
+            </div>
+        </div>`;
+
+        template1 = `<div class="col-xs-4  yt-thumbnail-container">
+        <a href="#popup-{{Popup_Id}}">
+        <img src="{{Yt_Medium_Thumbnail}}" alt="{{Yt_Video_Title}}"/>                            
+        </a>
+    </div>
+    <div id="popup-{{Popup_Id}}" class='overlay item'>
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <iframe width="560" height="315" src="{{Yt_Iframe_Url}}" allowfullscreen></iframe>
+        </div>
+    </div>`;
+        }
     
-        var template = `<div class="col-xs-6  yt-thumbnail-container">
-                            <a href="#popup-{{Popup_Id}}">
-                            <img src="{{Yt_Medium_Thumbnail}}" alt="{{Yt_Video_Title}}"/>                            
-                            </a>
-                        </div>
-                        <div id="popup-{{Popup_Id}}" class='overlay item'>
-                            <div class="popup">
-                                <a class="close" href="#">&times;</a>
-                                <iframe width="560" height="315" src="{{Yt_Iframe_Url}}" allowfullscreen></iframe>
-                            </div>
-                        </div>`;
 
     
         if (template != null) {
     
-            populatedContent = GenerateHtmlContent(template.trim(), modelItems);
+            populatedContent = GenerateHtmlContent(template.trim(), modelItems, template1.trim());
     
             if (populatedContent != null) {
                 if (section === 'featured'){
                     $('#youtubeFeatured').append(populatedContent);
+                    $('#youtubeFeatured').append('</div>');
+                    
                 } else 
                 {
                     $('#youtubeContainer').append(populatedContent);                    

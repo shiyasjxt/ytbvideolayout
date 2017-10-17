@@ -1,7 +1,7 @@
 // This method first matches shortcode structure of the defined template
 // Afterwards the shortcode stricture is matched, matching shortcodes will be populated with valid content from the AJAX response
 // Once shortcodes are replaced with valid content, it will return a generated HTML markup that can be assigned to a DOM element 
-function GenerateHtmlContent(htmlTemplate, modelItems) {
+function GenerateHtmlContent(htmlTemplate, modelItems, htmlTemplate1) {
     
         console.log("GenerateHtmlContent() Initiated!");
     
@@ -18,7 +18,12 @@ function GenerateHtmlContent(htmlTemplate, modelItems) {
     
                 if (j == 0) {
                     htmlString = htmlTemplate;
-                }
+                } ;
+
+                if (j == 0 && i > 0) {
+                    htmlString = htmlTemplate1;
+                } ;
+
     
                 switch (MatchedResults[j].trim()) {
     

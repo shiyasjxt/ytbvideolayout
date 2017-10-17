@@ -2519,3 +2519,11 @@ body.parttime-jobtype #map {
     content: "";
     clear: both;
     display: table; }
+  .videoContainer .youtubeContainerdiv h1 {
+    color: #00acd4;
+    font: 40px/1 "SlimJoe", "Myriad Pro", Arial, Helvetica, sans-serif; }
+    .videoContainer .youtubeContainerdiv h1 strong {
+      font-family: "BigJohn", "Arial Black", Arial, Helvetica, sans-serif;
+      display: block; }
+  .videoContainer .youtubeContainerdiv h1::first-letter {
+    color: #00acd4; }
