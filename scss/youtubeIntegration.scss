@@ -23,25 +23,17 @@ $roundness: 20px 0 20px 0;
     background-color: rgb(54,54,54);
     
 .tvholder{
-    width: 70%;
+    // width: 70%;
     margin: 0 auto;
     display: block;
-    h1{
-        text-align: center;
-        color: white;
-        span {
-            color: $color-1;            
-        }
+
+    img{
+        margin: 0 auto;
+        padding-top: 20px;
     }
 }
 }
 
-
-.tvholder{
-    width: 70%;
-    margin: 0 auto;
-    display: block;
-}
 
 .videoContainer{    
     .youtubeFeatureddiv{
@@ -49,15 +41,20 @@ $roundness: 20px 0 20px 0;
             #youtubeFeatured{
                 width: 100%;
                 margin: 0 auto;
-                padding: 10px;
+                padding-top: 10px;
                 display: block;
                 h1{
-                    color: white;
+                    color: #fff;
+                    font: 40px/1 "SlimJoe", "Myriad Pro", Arial, Helvetica, sans-serif;
+                    strong {
+                        font-family: "BigJohn", "Arial Black", Arial, Helvetica, sans-serif;
+                        display: block;     
+                    }
                 }
-                p{
-                    color: grey;
-                    font-weight: normal;
+                h1::first-letter{
+                    color: #fff;
                 }
+
             }
             .featuregrid {
                 @include clearfix;

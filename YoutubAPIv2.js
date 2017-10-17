@@ -13,11 +13,11 @@
 
 $(document).ready(function () {
     
-    var playlistId = "PLm2XPIPBBfwkDeYsnP-8qBX_IpoTuxp3m";
+    var playlistId = "PLm2XPIPBBfwl44EVg1uZ4J3U6ezeMq2P5";
     var section = 'featured';
 
     CreateYoutubeAPIAjaxRequest(playlistId, section);
-    var playlistId = "PLm2XPIPBBfwkDeYsnP-8qBX_IpoTuxp3m&maxResults=50";
+    var playlistId = "PLm2XPIPBBfwl44EVg1uZ4J3U6ezeMq2P5&maxResults=50";
     section = 'fulllist';
     
     CreateYoutubeAPIAjaxRequest(playlistId, section);
@@ -78,13 +78,46 @@ $(document).ready(function () {
         var modelItems = result.responseModelItems;
     
         var populatedContent = "";
-    
-        var template = `<div class="col-md-3 yt-thumbnail-container">
+        var template = "";
+        if (section === "featured") {
+           
+            if (Popup_Id ==0) {
+                template = `<div class="col-xs-6  yt-thumbnail-container">
+                <img src="{{Yt_Medium_Thumbnail}}" alt="{{Yt_Video_Title}}"/>
+                <a href="#popup-{{Popup_Id}}">
+                    <span class="content-span">
+                    </span>
+                </a>
+            </div>
+            <div id="popup-{{Popup_Id}}" class='overlay item'>
+                <div class="popup">
+                    <a class="close" href="#">&times;</a>
+                    <iframe width="560" height="315" src="{{Yt_Iframe_Url}}" allowfullscreen></iframe>
+                </div>
+            </div>`;
+            } else {
+                template = `<div class="col-xs-6  yt-thumbnail-container">
+                <img src="{{Yt_Medium_Thumbnail}}" alt="{{Yt_Video_Title}}"/>
+                <a href="#popup-{{Popup_Id}}">
+                    <span class="content-span">
+                    </span>
+                </a>
+            </div>
+            <div id="popup-{{Popup_Id}}" class='overlay item'>
+                <div class="popup">
+                    <a class="close" href="#">&times;</a>
+                    <iframe width="560" height="315" src="{{Yt_Iframe_Url}}" allowfullscreen></iframe>
+                </div>
+            </div>`;
+            }
+
+       
+        } else 
+        {
+            template = `<div class="col-xs-6  yt-thumbnail-container">
                             <img src="{{Yt_Medium_Thumbnail}}" alt="{{Yt_Video_Title}}"/>
                             <a href="#popup-{{Popup_Id}}">
                                 <span class="content-span">
-                                    <h3>{{Yt_Video_Title}}</h3>
-                                    <p>{{Yt_Video_Description}}</p>
                                 </span>
                             </a>
                         </div>
@@ -94,11 +127,8 @@ $(document).ready(function () {
                                 <iframe width="560" height="315" src="{{Yt_Iframe_Url}}" allowfullscreen></iframe>
                             </div>
                         </div>`;
+        }
 
-                        
-
-        
-    
     
         if (template != null) {
     

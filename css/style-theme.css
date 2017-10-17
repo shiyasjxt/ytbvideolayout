@@ -2477,32 +2477,27 @@ body.parttime-jobtype #map {
 .tvholderContainer {
   background-color: #363636; }
   .tvholderContainer .tvholder {
-    width: 70%;
     margin: 0 auto;
     display: block; }
-    .tvholderContainer .tvholder h1 {
-      text-align: center;
-      color: white; }
-      .tvholderContainer .tvholder h1 span {
-        color: #00acd4; }
-
-.tvholder {
-  width: 70%;
-  margin: 0 auto;
-  display: block; }
+    .tvholderContainer .tvholder img {
+      margin: 0 auto;
+      padding-top: 20px; }
 
 .videoContainer .youtubeFeatureddiv {
   background-color: #866398; }
   .videoContainer .youtubeFeatureddiv #youtubeFeatured {
     width: 100%;
     margin: 0 auto;
-    padding: 10px;
+    padding-top: 10px;
     display: block; }
     .videoContainer .youtubeFeatureddiv #youtubeFeatured h1 {
-      color: white; }
-    .videoContainer .youtubeFeatureddiv #youtubeFeatured p {
-      color: grey;
-      font-weight: normal; }
+      color: #fff;
+      font: 40px/1 "SlimJoe", "Myriad Pro", Arial, Helvetica, sans-serif; }
+      .videoContainer .youtubeFeatureddiv #youtubeFeatured h1 strong {
+        font-family: "BigJohn", "Arial Black", Arial, Helvetica, sans-serif;
+        display: block; }
+    .videoContainer .youtubeFeatureddiv #youtubeFeatured h1::first-letter {
+      color: #fff; }
   .videoContainer .youtubeFeatureddiv .featuregrid:before, .videoContainer .youtubeFeatureddiv .featuregrid:after {
     content: '';
     display: table; }
