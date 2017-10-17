@@ -83,8 +83,6 @@ $(document).ready(function () {
                             <img src="{{Yt_Medium_Thumbnail}}" alt="{{Yt_Video_Title}}"/>
                             <a href="#popup-{{Popup_Id}}">
                                 <span class="content-span">
-                                    <h3>{{Yt_Video_Title}}</h3>
-                                    <p>{{Yt_Video_Description}}</p>
                                 </span>
                             </a>
                         </div>
