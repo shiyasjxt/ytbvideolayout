@@ -80,10 +80,8 @@ $(document).ready(function () {
         var populatedContent = "";
     
         var template = `<div class="col-xs-6  yt-thumbnail-container">
-                            <img src="{{Yt_Medium_Thumbnail}}" alt="{{Yt_Video_Title}}"/>
                             <a href="#popup-{{Popup_Id}}">
-                                <span class="content-span">
-                                </span>
+                            <img src="{{Yt_Medium_Thumbnail}}" alt="{{Yt_Video_Title}}"/>                            
                             </a>
                         </div>
                         <div id="popup-{{Popup_Id}}" class='overlay item'>
