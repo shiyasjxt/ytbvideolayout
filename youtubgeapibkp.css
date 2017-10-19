@@ -25,7 +25,7 @@ div.yt-thumbnail-container:hover span.content-span {
 }
 
 .overlay {
-    position: fixed;
+    position: relative;
     top: 0;
     bottom: 0;
     left: 0;
@@ -34,9 +34,11 @@ div.yt-thumbnail-container:hover span.content-span {
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
-    /* background-image: url(/media/smaart-recruitment-2015/images/smaart-tv.svg);
+    /* 
+    background-image: url(/media/smaart-recruitment-2015/images/smaart-tv.svg);
     background-repeat: no-repeat;
-    background-position: center; */
+    background-position: center; 
+    */
 }
 
 .overlay:target {
@@ -51,7 +53,7 @@ div.yt-thumbnail-container:hover span.content-span {
     background: #fff;
     border-radius: 5px;
     width: 30%;
-    position: relative;
+    position: absolute;
     transition: all 5s ease-in-out;
 }
 
@@ -69,12 +71,4 @@ div.yt-thumbnail-container:hover span.content-span {
 
 .popup .close:hover {
     color: #ffF;
-}
-
-#videoplayer {
-    background-image: url(/media/smaart-recruitment-2015/images/smaart-tv.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-size: 800px; */
-    height: 650px;
 }

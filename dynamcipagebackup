@@ -1,0 +1,28 @@
+<div class="tvholderContainer">
+	<div class="container">
+		<div class="tvholder">
+			<img alt="" src="/media/smaart-recruitment-2015/images/smarttv-logo-2.png" />
+			<div id="videoplayer">
+				&nbsp;</div>
+		</div>
+	</div>
+</div>
+<div class="videoContainer">
+	<div class="youtubeFeatureddiv">
+		<div class="container">
+			<div class="row featured featuregrid" id="youtubeFeatured">
+				<br />
+				<h1>
+					Latest<strong>Featured</strong></h1>
+				<hr />
+			</div>
+		</div>
+	</div>
+	<div class="youtubeContainerdiv">
+		<div class="row fulllist grid pagination pagination-lg" id="youtubeContainer">
+			<br />
+			<h1>
+				The Latest Roles &amp; <strong>Tips and Tricks</strong></h1>
+		</div>
+	</div>
+</div>
