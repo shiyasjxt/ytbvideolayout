@@ -70,11 +70,3 @@ div.yt-thumbnail-container:hover span.content-span {
 .popup .close:hover {
     color: #ffF;
 }
-
-#videoplayer {
-    background-image: url(/media/smaart-recruitment-2015/images/smaart-tv.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-size: 800px; */
-    height: 650px;
-}

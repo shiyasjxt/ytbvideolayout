@@ -58,6 +58,7 @@
  * Bulletproof font-face via Font Squirrel
  * @include fontface('family', 'assets/fonts/', 'myfontname');
  */
+/* Large desktop */
 /* CSS3 Keyframe animations */
 @keyframes grain {
   0% {
@@ -2460,6 +2461,7 @@ body.parttime-jobtype #map {
  * Bulletproof font-face via Font Squirrel
  * @include fontface('family', 'assets/fonts/', 'myfontname');
  */
+/* Large desktop */
 .grid:before, .grid:after {
   content: '';
   display: table; }
@@ -2481,7 +2483,104 @@ body.parttime-jobtype #map {
     display: block; }
     .tvholderContainer .tvholder img {
       margin: 0 auto;
-      padding-top: 20px; }
+      padding-top: 40px;
+      padding-bottom: 20px; }
+    .tvholderContainer .tvholder #videoplayer {
+      background-image: url(/media/smaart-recruitment-2015/images/smaart-tv.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      /* background-size: 800px; */
+      height: 650px; }
+      @media screen and (max-width: 1024px) {
+        .tvholderContainer .tvholder #videoplayer {
+          height: 534px; } }
+      @media screen and (max-width: 768px) {
+        .tvholderContainer .tvholder #videoplayer {
+          height: 150px; } }
+      @media screen and (max-width: 414px) {
+        .tvholderContainer .tvholder #videoplayer {
+          height: 150px; } }
+      @media screen and (max-width: 360px) {
+        .tvholderContainer .tvholder #videoplayer {
+          height: 150px; } }
+      .tvholderContainer .tvholder #videoplayer #videoframe {
+        height: 70%;
+        position: relative;
+        left: 18%;
+        top: 33%;
+        width: 80%; }
+        @media screen and (max-width: 1024px) {
+          .tvholderContainer .tvholder #videoplayer #videoframe {
+            height: 377px;
+            position: relative;
+            left: 168px;
+            top: 176px;
+            width: 752px; } }
+        @media screen and (max-width: 768px) {
+          .tvholderContainer .tvholder #videoplayer #videoframe {
+            height: 105px;
+            position: relative;
+            left: 274px;
+            top: 49px;
+            width: 213px; } }
+        @media screen and (max-width: 414px) {
+          .tvholderContainer .tvholder #videoplayer #videoframe {
+            height: 109px;
+            position: relative;
+            left: 106px;
+            top: 47px;
+            width: 213px; } }
+        @media screen and (max-width: 412px) {
+          .tvholderContainer .tvholder #videoplayer #videoframe {
+            height: 167px;
+            position: relative;
+            left: 106px;
+            top: 28px;
+            width: 213px; } }
+        @media screen and (max-width: 375px) {
+          .tvholderContainer .tvholder #videoplayer #videoframe {
+            height: 163px;
+            position: relative;
+            left: 88px;
+            top: 29px;
+            width: 211px; } }
+        @media screen and (max-width: 360px) {
+          .tvholderContainer .tvholder #videoplayer #videoframe {
+            height: 202px;
+            position: relative;
+            left: 79px;
+            top: 22px;
+            width: 214px; } }
+        @media screen and (max-width: 320px) {
+          .tvholderContainer .tvholder #videoplayer #videoframe {
+            height: 231px;
+            position: relative;
+            left: 61px;
+            top: 18px;
+            width: 210px; } }
+        .tvholderContainer .tvholder #videoplayer #videoframe iframe {
+          width: 81%;
+          height: 91%; }
+          @media screen and (max-width: 412px) {
+            .tvholderContainer .tvholder #videoplayer #videoframe iframe {
+              width: 81%;
+              height: 56%;
+              margin-top: 22px; } }
+          @media screen and (max-width: 375px) {
+            .tvholderContainer .tvholder #videoplayer #videoframe iframe {
+              width: 81%;
+              height: 58%;
+              margin-top: 21px; } }
+          @media screen and (max-width: 360px) {
+            .tvholderContainer .tvholder #videoplayer #videoframe iframe {
+              width: 81%;
+              height: 49%;
+              margin-top: 26px; } }
+          @media screen and (max-width: 320px) {
+            .tvholderContainer .tvholder #videoplayer #videoframe iframe {
+              width: 81%;
+              height: 42%;
+              margin-top: 31px; } }
 
 .videoContainer .youtubeFeatureddiv {
   background-color: #866398; }
@@ -2514,6 +2613,7 @@ body.parttime-jobtype #map {
 .videoContainer .youtubeContainerdiv {
   text-align: center;
   color: #00acd4;
+  background-color: white;
   /* Clear floats after the columns */ }
   .videoContainer .youtubeContainerdiv .row:after {
     content: "";
@@ -2524,6 +2624,7 @@ body.parttime-jobtype #map {
     font: 40px/1 "SlimJoe", "Myriad Pro", Arial, Helvetica, sans-serif; }
     .videoContainer .youtubeContainerdiv h1 strong {
       font-family: "BigJohn", "Arial Black", Arial, Helvetica, sans-serif;
-      display: block; }
+      display: block;
+      padding-bottom: 20px; }
   .videoContainer .youtubeContainerdiv h1::first-letter {
     color: #00acd4; }

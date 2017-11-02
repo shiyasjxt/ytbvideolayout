@@ -37,6 +37,8 @@
 
 	// jquery
 	$(function(){
+
+
 		
 		$('link[href*="/media/COMMON/newdash/lib/bootstrap.min.css"]').remove();
 			

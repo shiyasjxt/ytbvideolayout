@@ -24,3 +24,11 @@ $linkHoverColor: $color-2; //red
 $bodyfont: "Quicksand","Myriad Pro",Arial, Helvetica, sans-serif;
 $headfont: "BigJohn", "Arial Black", Arial, Helvetica, sans-serif;
 $thinfont: "SlimJoe","Myriad Pro",Arial, Helvetica, sans-serif;
+
+// Media
+
+/* Large desktop */
+$break-large: 1200px;
+$break-medium: 979px;
+$break-small: 768px;
+$break-xsmall: 480px;

@@ -88,76 +88,58 @@
       background-position: center;
       /* background-size: 800px; */
       height: 650px; }
-      @media screen and (max-width: 1024px) {
-        .tvholderContainer .tvholder #videoplayer {
-          height: 534px; } }
-      @media screen and (max-width: 768px) {
-        .tvholderContainer .tvholder #videoplayer {
-          height: 150px; } }
-      @media screen and (max-width: 414px) {
-        .tvholderContainer .tvholder #videoplayer {
-          height: 150px; } }
-      @media screen and (max-width: 360px) {
-        .tvholderContainer .tvholder #videoplayer {
-          height: 150px; } }
       .tvholderContainer .tvholder #videoplayer #videoframe {
         height: 70%;
         position: relative;
         left: 18%;
         top: 33%;
         width: 80%; }
-        @media screen and (max-width: 1024px) {
-          .tvholderContainer .tvholder #videoplayer #videoframe {
-            height: 377px;
-            position: relative;
-            left: 168px;
-            top: 176px;
-            width: 752px; } }
-        @media screen and (max-width: 768px) {
-          .tvholderContainer .tvholder #videoplayer #videoframe {
-            height: 105px;
-            position: relative;
-            left: 274px;
-            top: 49px;
-            width: 213px; } }
-        @media screen and (max-width: 414px) {
-          .tvholderContainer .tvholder #videoplayer #videoframe {
-            height: 109px;
-            position: relative;
-            left: 106px;
-            top: 47px;
-            width: 213px; } }
-        @media screen and (max-width: 412px) {
-          .tvholderContainer .tvholder #videoplayer #videoframe {
-            height: 167px;
-            position: relative;
-            left: 106px;
-            top: 28px;
-            width: 213px; } }
-        @media screen and (max-width: 375px) {
-          .tvholderContainer .tvholder #videoplayer #videoframe {
-            height: 163px;
-            position: relative;
-            left: 88px;
-            top: 29px;
-            width: 211px; } }
-        @media screen and (max-width: 360px) {
-          .tvholderContainer .tvholder #videoplayer #videoframe {
-            height: 202px;
-            position: relative;
-            left: 79px;
-            top: 22px;
-            width: 214px; } }
         @media screen and (max-width: 320px) {
           .tvholderContainer .tvholder #videoplayer #videoframe {
-            height: 231px;
+            height: 208px;
             position: relative;
-            left: 61px;
-            top: 18px;
-            width: 210px; } }
+            left: 59px;
+            top: 271px;
+            width: 265px; } }
+        @media screen and (max-width: 360px) {
+          .tvholderContainer .tvholder #videoplayer #videoframe {
+            height: 208px;
+            position: relative;
+            left: 59px;
+            top: 271px;
+            width: 265px; } }
+        @media screen and (max-width: 375px) {
+          .tvholderContainer .tvholder #videoplayer #videoframe {
+            height: 208px;
+            position: relative;
+            left: 59px;
+            top: 271px;
+            width: 265px; } }
+        @media screen and (max-width: 412px) {
+          .tvholderContainer .tvholder #videoplayer #videoframe {
+            height: 248px;
+            position: relative;
+            left: 67px;
+            top: 265px;
+            width: 307px; } }
         .tvholderContainer .tvholder #videoplayer #videoframe iframe {
           width: 81%;
           height: 91%; }
+          @media screen and (max-width: 320px) {
+            .tvholderContainer .tvholder #videoplayer #videoframe iframe {
+              width: 81%;
+              height: 42%;
+              margin-top: 31px; } }
+          @media screen and (max-width: 360px) {
+            .tvholderContainer .tvholder #videoplayer #videoframe iframe {
+              width: 81%;
+              height: 49%;
+              margin-top: 26px; } }
+          @media screen and (max-width: 375px) {
+            .tvholderContainer .tvholder #videoplayer #videoframe iframe {
+              width: 81%;
+              height: 51%;
+              margin-top: 26px; } }
           @media screen and (max-width: 412px) {
             .tvholderContainer .tvholder #videoplayer #videoframe iframe {
               width: 81%;
@@ -168,16 +150,6 @@
               width: 81%;
               height: 58%;
               margin-top: 21px; } }
-          @media screen and (max-width: 360px) {
-            .tvholderContainer .tvholder #videoplayer #videoframe iframe {
-              width: 81%;
-              height: 49%;
-              margin-top: 26px; } }
-          @media screen and (max-width: 320px) {
-            .tvholderContainer .tvholder #videoplayer #videoframe iframe {
-              width: 81%;
-              height: 42%;
-              margin-top: 31px; } }
 
 .videoContainer .youtubeFeatureddiv {
   background-color: #866398; }

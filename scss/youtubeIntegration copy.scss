@@ -41,25 +41,6 @@ $roundness: 20px 0 20px 0;
         /* background-size: 800px; */
         height: 650px;
 
-        @media screen and (max-width: 1024px) {
-            height: 534px;
-            
-          }
-
-        @media screen and (max-width: 768px) {
-            height: 150px;
-            
-          }
-
-        @media screen and (max-width: 414px) {
-            height: 150px;
-            
-          }
-        @media screen and (max-width: 360px) {
-            height: 150px;
-            
-          }
-
         #videoframe {
             height: 70%;
             position: relative;
@@ -67,80 +48,63 @@ $roundness: 20px 0 20px 0;
             top: 33%;
             width: 80%;
 
-            @media screen and (max-width: 1024px) {
-                height: 377px;
+            
+            @media screen and (max-width: 320px) {
+                height: 208px;
                 position: relative;
-                left: 168px;
-                top: 176px;
-                width: 752px;             
-              }
-
-            @media screen and (max-width: 768px) {
-                height: 105px;
-                position: relative;
-                left: 274px;
-                top: 49px;
-                width: 213px;
-              }
-
-
-
-            @media screen and (max-width: 414px) {
-                height: 109px;
-                position: relative;
-                left: 106px;
-                top: 47px;
-                width: 213px;
-              }
-
-              @media screen and (max-width: 412px) {
-                height: 167px;
-                position: relative;
-                left: 106px;
-                top: 28px;
-                width: 213px;
-              }
-
-
-
-
-              @media screen and (max-width: 375px) {
-                height: 163px;
-                position: relative;
-                left: 88px;
-                top: 29px;
-                width: 211px;
+                left: 59px;
+                top: 271px;
+                width: 265px;
               }
 
               @media screen and (max-width: 360px) {
-                height: 202px;
+                height: 208px;
                 position: relative;
-                left: 79px;
-                top: 22px;
-                width: 214px;
+                left: 59px;
+                top: 271px;
+                width: 265px;
               }
 
-
-            @media screen and (max-width: 320px) {
-                height: 231px;
+              @media screen and (max-width: 375px) {
+                height: 208px;
                 position: relative;
-                left: 61px;
-                top: 18px;
-                width: 210px;
+                left: 59px;
+                top: 271px;
+                width: 265px;
               }
 
-            
-      
+              @media screen and (max-width: 412px) {
+                height: 248px;
+                position: relative;
+                left: 67px;
+                top: 265px;
+                width: 307px;
+              }
 
-         
       
 
             iframe{
                 width: 81%;
                 height: 91%;
 
-       
-   
+                @media screen and (max-width: 320px) {
+                    width: 81%;
+                    height: 42%;
+                    margin-top: 31px;
+                  }
+
+                @media screen and (max-width: 360px) {
+                    width: 81%;
+                    height: 49%;
+                    margin-top: 26px;
+                  }
+
+
+                  @media screen and (max-width: 375px) {
+                    width: 81%;
+                    height: 51%;
+                    margin-top: 26px;
+                  }
 
                   @media screen and (max-width: 412px) {
                     width: 81%;
@@ -153,19 +117,6 @@ $roundness: 20px 0 20px 0;
                     height: 58%;
                     margin-top: 21px;
                   }
-
-                  @media screen and (max-width: 360px) {
-                    width: 81%;
-                    height: 49%;
-                    margin-top: 26px;
-                  }
-
-                  @media screen and (max-width: 320px) {
-                    width: 81%;
-                    height: 42%;
-                    margin-top: 31px;
-                  }
-
             }
         }
 
@@ -221,6 +172,7 @@ $roundness: 20px 0 20px 0;
         text-align: center;
         color: $color-1;
         background-color: white;
+
 
         /* Clear floats after the columns */
         .row:after {

@@ -13,16 +13,19 @@
 
 $(document).ready(function () {
     
-    var playlistId = "PLm2XPIPBBfwl44EVg1uZ4J3U6ezeMq2P5";
+    var playlistId = "PLkiwth99CkcAXoqRBQD1TqdWk1LLneRJl";
     var section = 'featured';
 
     CreateYoutubeAPIAjaxRequest(playlistId, section);
-    var playlistId = "PLm2XPIPBBfwl44EVg1uZ4J3U6ezeMq2P5&maxResults=50";
+    var playlistId = "PLkiwth99CkcAXoqRBQD1TqdWk1LLneRJl&maxResults=50";
     section = 'fulllist';
     
     CreateYoutubeAPIAjaxRequest(playlistId, section);
 
         console.log("inside api call");
+
+
+
     
     });
     
@@ -89,15 +92,15 @@ $(document).ready(function () {
         
         if (section === 'featured'){
 
-                template = `
-                
-                <div class="col-xs-6  yt-thumbnail-container">
+                template = `<div class="col-xs-6  yt-thumbnail-container">
                 <a href="#popup-{{Popup_Id}}">
                 <img src="{{Yt_Medium_Thumbnail}}" alt="{{Yt_Video_Title}}"/>                            
                 </a>
             </div>
             <div id="popup-{{Popup_Id}}" class='hidden'>
+                <div class="video">
                     <iframe width="560" height="315" src="{{Yt_Iframe_Url}}" allowfullscreen></iframe>
+                </div>
             </div>
             <div class="col-xs-6  yt-thumbnail-container">`;
 
@@ -107,9 +110,8 @@ $(document).ready(function () {
             <img src="{{Yt_Medium_Thumbnail}}" alt="{{Yt_Video_Title}}"/>                            
             </a>
         </div>
-        <div id="popup-{{Popup_Id}}" class='overlay item'>
-            <div class="popup">
-                <a class="close" href="#">&times;</a>
+        <div id="popup-{{Popup_Id}}" class='hidden'>
+            <div class="video">
                 <iframe width="560" height="315" src="{{Yt_Iframe_Url}}" allowfullscreen></iframe>
             </div>
         </div>`;
@@ -156,9 +158,20 @@ $(document).ready(function () {
                     
                 } else 
                 {
-                    $('#youtubeContainer').append(populatedContent);                    
+                    $('#youtubeContainer').append(populatedContent);                  
                 }
                 section =1;
+
+                $('.yt-thumbnail-container').click(function() {
+                    var id = $(this).children("a").attr("href");
+                    var srcurl = $(id).find('iframe').attr("src")+"?autoplay=1&rel=0";
+                    $("#videoframe").children("iframe").attr("src", srcurl);
+                    // $("html, body").animate({ scrollTop: 0 }, 600);
+                    $('html, body').animate({scrollTop: $('#videoplayer').offset().top -150 }, 'slow');
+                    
+                    return false;
+                });
+               
             } 
             else {
                 console.log("Populating Container Failed!");
